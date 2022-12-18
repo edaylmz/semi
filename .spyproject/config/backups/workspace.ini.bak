@@ -1,0 +1,10 @@
+[workspace]
+restore_data_on_startup = True
+save_data_on_exit = True
+save_history = True
+save_non_project_files = False
+
+[main]
+version = 0.2.0
+recent_files = ['..\\AppData\\Roaming\\Python\\Python38\\Scripts\\eda.py', 'knockoff.py', 'Skeptical2021\\run_scratch.py', 'Skeptical2021\\train_scratch.py', 'knockoffnets\\requirements.txt', 'Nasty-Teacher\\train_scratch.py', 'Nasty-Teacher\\experiments\\CIFAR10\\baseline\\resnet18\\params.json']
+
