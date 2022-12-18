@@ -29,7 +29,7 @@ torch.backends.cudnn.benchmark = False
 
 # ************************** parameters **************************
 parser = argparse.ArgumentParser()
-parser.add_argument('--save_path', default='/content/Skeptical2021/experiments/CIFAR10/adversarial_teacher/resnet18_self', type=str)
+parser.add_argument('--save_path', default='/content/semi/Skeptical2021/experiments/CIFAR10/adversarial_teacher/resnet18_self', type=str)
 parser.add_argument('--resume', default=None, type=str)
 parser.add_argument('--gpu_id', default=[0], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
 args = parser.parse_args()

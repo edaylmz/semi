@@ -40,7 +40,7 @@ torch.backends.cudnn.benchmark = False
 
 # ************************** parameters **************************
 parser = argparse.ArgumentParser()
-parser.add_argument('--save_path', default='/content/Skeptical2021/experiments/S_resnet18_from_nasty/', type=str)
+parser.add_argument('--save_path', default='/content/semi/Skeptical2021/experiments/S_resnet18_from_nasty/', type=str)
 parser.add_argument('--teacher_resume', default=None, type=str,
                     help='If you specify the teacher resume here, we will use it instead of parameters from json file')
 parser.add_argument('--resume', default=None, type=str)
