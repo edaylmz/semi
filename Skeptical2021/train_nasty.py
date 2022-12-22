@@ -29,7 +29,7 @@ torch.backends.cudnn.benchmark = False
 
 # ************************** parameters **************************
 parser = argparse.ArgumentParser()
-parser.add_argument('--save_path', default='/content/semi/Skeptical2021/experiments/CIFAR10/adversarial_teacher/resnet18_self', type=str)
+parser.add_argument('--save_path', default='/content/semi/Skeptical2021/experiments/CIFAR10/kd_nasty_resnet18/nasty_resnet18', type=str)
 parser.add_argument('--resume', default=None, type=str)
 parser.add_argument('--gpu_id', default=[0], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
 args = parser.parse_args()
@@ -213,13 +213,16 @@ if __name__ == "__main__":
 
     # PreResNet(ResNet for CIFAR-10)  20/32/56/110 ***************
     elif params.model_name.startswith('preresnet20'):
-        model = PreResNet(depth=20)
+        model = PreResNet(depth=20, num_classes=num_class)
     elif params.model_name.startswith('preresnet32'):
-        model = PreResNet(depth=32)
+        model = PreResNet(depth=32, num_classes=num_class)
+    elif params.model_name.startswith('preresnet44'):
+        model = PreResNet(depth=44, num_classes=num_class)
     elif params.model_name.startswith('preresnet56'):
-        model = PreResNet(depth=56)
+        model = PreResNet(depth=56, num_classes=num_class)
     elif params.model_name.startswith('preresnet110'):
-        model = PreResNet(depth=110)
+        model = PreResNet(depth=110, num_classes=num_class)
+
 
     # DenseNet *********************************************
     elif params.model_name == 'densenet121':
