@@ -271,6 +271,8 @@ if __name__ == "__main__":
         num_class = 10
     elif params.dataset == 'cifar100':
         num_class = 100
+    elif params.dataset == 'medical':
+        num_class = 2     
     else:
         num_class = 10
 
