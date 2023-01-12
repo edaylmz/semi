@@ -10,11 +10,10 @@
     "augmentation": 1,
     "cuda": 1,
 
-    "dataset": "cifar10",
+    "dataset": "cifar100",
 
     "teacher_model": "resnet18",
-    "teacher_resume": "/content/semi/Skeptical2021/experiments/CIFAR10/baseline/resnet18/best_model.tar",
-
-    "temperature": 50,
+    "teacher_resume": "/content/semi/Skeptical2021/experiments/CIFAR100/baseline/resnet18/best_model.tar",
+    "temperature": 70,
     "alpha": 0.9
 }

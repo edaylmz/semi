@@ -11,6 +11,9 @@
     "num_workers": 8,
     "augmentation": 1,
     "cuda": 1,
+    "loc": 3,
+    "kd_delay": 5,
+
 
     "dataset": "cifar10",
 
